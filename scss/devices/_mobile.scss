@@ -40,6 +40,13 @@
         display: none;
     }
 
+    .design-skills {
+        @include flexColumn(15px,center,unset);
+        > div {
+            @include flexColumn(15px,center,unset);
+        }
+    }
+
     .contact {
         display: flex;
         flex-direction: column;

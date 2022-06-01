@@ -14,3 +14,15 @@ body {
     height: 35vh;
     border-radius: 50%;
 }
+
+@mixin flexColumn(
+    $rowGap: 10px,
+    $alignItens: center,
+    $justifyContent: center
+) {
+    display: flex;
+    flex-direction: column;
+    row-gap: $rowGap;
+    align-items: $alignItens;
+    justify-content: $justifyContent;
+}
