@@ -5,13 +5,53 @@
         justify-content: space-evenly;
     }
 
+    .services {
+        @include flexColumn(40px);
+
+        > article:nth-child(2) {
+            @include flexColumn(40px);
+        }
+
+        aside {
+            @include flexColumn(20px,center,space-evenly);
+            padding: 5%;
+            height: 30vh;
+            color: whitesmoke;
+        }
+
+        aside:nth-child(1) {
+            background-color: $blockColor1;
+        }
+
+        aside:nth-child(2) {
+            background-color: $blockColor2;
+        }
+
+        aside:nth-child(3) {
+            background-color: $blockColor3;
+        }
+
+        aside:nth-child(4) {
+            background-color: $blockColor4;
+        }
+
+        div {
+            @include flexColumn(10px);
+            text-align: center;
+        }
+
+        i {
+            font-size: 50px
+        }
+    }
+
     .gallery {
         @include flexColumn(60px);
     }
 
     .pics {
         @include flexColumn(30px);
-        
+
         > aside {
             h3, p, a {
                 display: none;
